@@ -1,0 +1,28 @@
+<!DOCTYPE html>
+<html ng-app="app">
+
+	<head>
+		<meta http-equiv="Content-Type" content="text/html; charset=utf-8" />
+		<meta http-equiv="content-language" content="pt-br" />
+		<title>Página Principal</title>
+
+		<!--css app, Bootstrap import-->
+		<link rel="stylesheet" type="text/css" href="./static/css/app.css">
+		<link rel="stylesheet" type="text/css" href="./static/css/bootstrap.min.css">
+		
+		<!--Libs importantes para configuracaçao do angular-->
+		<script type="text/javascript" src="./bower_components/angular/angular.min.js"></script>
+		<script type="text/javascript" src="./bower_components/angular-route/angular-route.min.js"></script>
+		<script type="text/javascript" src="./static/app.js"></script>
+		
+		<!--import de arquivos do projeto {{Factory}}-->
+		<script type="text/javascript" src="./static/js/util/Util.js"></script>
+		
+		<!--import de arquivos do projeto {{Controller}}-->
+		<script type="text/javascript" src="./static/js/controller/AlunoCtrl.js"></script>
+	</head>
+	
+	<body>
+		<div ng-view></div>
+	</body>
+</html>
